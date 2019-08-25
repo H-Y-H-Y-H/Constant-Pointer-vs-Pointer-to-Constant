@@ -1,18 +1,18 @@
 # Constant-Pointer-vs-Pointer-to-Constant
-
+ 
 # 指针常量：Constant Pointer
 指针本身为一个常量，指向的可以是变量，但它指向的地址是不可以变动的。
-
+ 
 ⚠️第二句，"可以"这个词，指向的也可以是常量，即常量指针常量，Constant Pointer to Constant, 写作：const * const int a
-
+ 
 # 常量指针：Pointer to Constant
 常量的指针，指针只能指向常量，不能指向变量，但是它指向的地址是可以改变的。
-
+ 
 # Tips
 看写法，const * 就是指针常量，* const 就是常量指针。
-
-
-
+ 
+ 
+ 
 例子1:
 void main()
 {
@@ -25,8 +25,8 @@ void main()
   printf("%s n",*ptr1);
 }
 //编译错误
-
-
+ 
+ 
 例子2:
 void main()
 {
@@ -38,10 +38,10 @@ void main()
   
   printf("%c n",*ptr1);
 }
-
+ 
 //输出A
-
-
+ 
+ 
 例子3:
 void main()
 {
