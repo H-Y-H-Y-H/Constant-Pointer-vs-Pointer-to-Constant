@@ -43,9 +43,8 @@ void main()
 
 //输出A
 ``` 
- 
-``` cpp
 例子3:
+``` cpp
 void main()
 {
   char *str1 = {"Hello"};
