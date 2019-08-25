@@ -17,10 +17,10 @@
 void main()
 {
   char *str1 = {"Hello"};
-  char *str2 = {"Hi"}
+  char *str2 = {"Hi"};
   char * const ptr1 = str1;   //指针常量，地址不变，地址内容可变
   
-  ptr1 = str2； //错误，因为ptr1是个不能变的指针
+  ptr1 = str2; //错误，因为ptr1是个不能变的指针
   
   printf("%s n",*ptr1);
 }
@@ -31,10 +31,10 @@ void main()
 void main()
 {
   char *str1 = {"Hello"};
-  char *str2 = {"Hi"}
+  char *str2 = {"Hi"};
   char * const ptr1 = str1;   //指针常量，地址不变，地址内容可变
   
-  *ptr1 = "A"； //正确，因为*ptr1是指向的地址的内容，可以变化
+  *ptr1 = "A"; //正确，因为*ptr1是指向的地址的内容，可以变化
   
   printf("%c n",*ptr1);
 }
@@ -46,10 +46,10 @@ void main()
 void main()
 {
   char *str1 = {"Hello"};
-  char *str2 = {"Hi"}
+  char *str2 = {"Hi"};
   const char *ptr = str1;   //常量指针，地址可变，内容不可变
   
-  ptr1 = str2； //正确，因为ptr1是个能变的指针，可以指到其他位置
+  ptr1 = str2;  //正确，因为ptr1是个能变的指针，可以指到其他位置
   
   printf("%s n",*ptr1);
 }
