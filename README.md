@@ -1,5 +1,5 @@
 # Constant-Pointer-vs-Pointer-to-Constant
- 
+
 # 指针常量：Constant Pointer
 指针本身为一个常量，指向的可以是变量，但它指向的地址是不可以变动的。
  
@@ -14,20 +14,22 @@
  
  
 例子1:
+``` cpp
 void main()
 {
   char *str1 = {"Hello"};
   char *str2 = {"Hi"};
-  char * const ptr1 = str1;   //指针常量，地址不变，地址内容可变
+  char * const ptr1 = s``` tr1;   //指针常量，地址不变，地址内容可变
   
   ptr1 = str2; //错误，因为ptr1是个不能变的指针
   
   printf("%s n",*ptr1);
 }
 //编译错误
- 
+```  
  
 例子2:
+``` cpp
 void main()
 {
   char *str1 = {"Hello"};
@@ -38,10 +40,11 @@ void main()
   
   printf("%c n",*ptr1);
 }
- 
+
 //输出A
+``` 
  
- 
+``` cpp
 例子3:
 void main()
 {
@@ -53,3 +56,4 @@ void main()
   
   printf("%s n",*ptr1);
 }
+``` 
